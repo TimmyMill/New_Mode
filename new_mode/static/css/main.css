@@ -1,0 +1,58 @@
+::-moz-placeholder {
+color: #000000;
+}
+
+/*
+Page Header
+*/
+
+header .navbar {
+    position: center;
+    background-color: #110f2a;
+    /*background-color: #121a44;*/
+}
+
+/*
+Navigation Bar
+*/
+
+/*Active Page*/
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus{
+color: #00ff00;
+background-color: #121a44;
+}
+
+/*All Other Pages*/
+.navbar-default  .navbar-nav > li > a {
+background-color: #110f2a;
+color: #20c20e;
+font-family: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+background-color: #121a44;
+/*background-color: #252d42;*/
+color: #00ff00;
+}
+
+body {
+background-color: #222147;
+/*background-color: #252d42;*/
+/* padding for navigation bar */
+padding-top: 70px;
+}
+
+.footer {
+    font-family: 'Consolas', 'Monaco', 'Bitstream Vera Sans Mono', monospace;
+    color: #00ff00;
+    background-color: #110f2a;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: left;
+}
