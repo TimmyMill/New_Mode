@@ -1,37 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Privacy</title>
+
+  <!-- Bootstrap CSS CDN -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="/static/css/main.css">
 </head>
 
 <body>
-<header class="navbar">
-<!-- Navigation Bar -->
-  <div class="container">
-    <nav class="navbar  navbar-default navbar-fixed-top">
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <!-- Navbar Container -->
+  <div class="container-fluid">
+
+    <!-- Navbar Header [contains both toggle button and navbar brand] -->
+    <div class="navbar-header">
+      <!-- Toggle Button [handles opening navbar components on mobile screens] -->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#exampleNavComponents"
+              aria-expanded="false">
+        <i class="glyphicon glyphicon-menu-hamburger"></i>
+      </button>
+
+      <!-- Navbar Brand -->
+      <a href="#" class="navbar-brand">
+        Bootstrap Navbar
+      </a>
+    </div>
+
+    <!-- Navbar Collapse [contains navbar components] -->
+    <div class="collapse navbar-collapse" id="exampleNavComponents"> <!-- Data target -->
+
+      <!-- Navbar Menu -->
       <ul class="nav navbar-nav">
         <li><a href="/">Home</a></li>
         <li class="active"><a href="#">Privacy</a></li>
         <li><a href="page2">Permissions</a></li>
       </ul>
-    </nav>
+
+    </div>
+    <!-- End Navbar Collapse -->
   </div>
-</header>
-<div class="container">
-  <p>PAGE 1!</p>
+  <!-- End Navbar Container-->
+</nav>
+<!-- End Navigation -->
+
+<div class="content">
+
+  <div class="container">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit repudiandae sapiente explicabo aperiam veritatis
+      adipisci, omnis debitis sint quaerat soluta necessitatibus, dolore accusamus aut neque ab? Non praesentium maxime
+      perferendis!
+    </p>
+    <div class="line"></div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique iusto aspernatur eius a blanditiis eveniet
+      ullam et itaque, esse rem fuga voluptate voluptatibus voluptatum, tempore obcaecati praesentium ad quo sunt.Velit
+      optio quidem qui nam quia eius obcaecati dolor eligendi facere tempore, ratione rem inventore nobis maxime sit
+      reiciendis placeat dolores ad recusandae porro. Omnis rerum similique quo voluptate incidunt!
+    </p>
+    <div class="line"></div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita nam voluptate sed explicabo, ut adipisci dolore
+      omnis. Facilis veniam natus quae, alias sapiente. Explicabo maxime eligendi maiores quisquam ipsam, omnis!
+      Consequuntur odit, assumenda soluta voluptatibus earum quasi, ipsa est natus quae facilis aliquid sint. Fugiat
+      illum eum quis fuga id totam molestiae, itaque reprehenderit et iusto voluptatum similique facilis doloremque.
+      Pariatur quibusdam nesciunt explicabo ea saepe, at atque aut iste vel quis et, quos nam itaque magni assumenda
+      libero amet corrupti architecto doloremque voluptatem neque doloribus qui non unde. Doloribus. Architecto id,
+      error nobis. Vel quibusdam, eius aut deserunt sed omnis necessitatibus ab iusto eveniet, tenetur tempore a nobis
+      illum quia optio est excepturi adipisci doloribus quidem? Animi, officiis repellendus!
+    </p>
+    <div class="line"></div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita nam voluptate sed explicabo, ut adipisci dolore
+      omnis. Facilis veniam natus quae, alias sapiente. Explicabo maxime eligendi maiores quisquam ipsam, omnis!
+      Consequuntur odit, assumenda soluta voluptatibus earum quasi, ipsa est natus quae facilis aliquid sint. Fugiat
+      illum eum quis fuga id totam molestiae, itaque reprehenderit et iusto voluptatum similique facilis doloremque.
+      Pariatur quibusdam nesciunt explicabo ea saepe, at atque aut iste vel quis et, quos nam itaque magni assumenda
+      libero amet corrupti architecto doloremque voluptatem neque doloribus qui non unde. Doloribus. Architecto id,
+      error nobis. Vel quibusdam, eius aut deserunt sed omnis necessitatibus ab iusto eveniet, tenetur tempore a nobis
+      illum quia optio est excepturi adipisci doloribus quidem? Animi, officiis repellendus!
+    </p>
+
+  </div>
+  <!-- End Container -->
 </div>
+<!-- End Content -->
+
+<!-- Footer -->
 <footer class="footer">
-  <div class="col-container col-max col-gutters flex-block-lg flex-item-center-lg">
+  <div class="container">
     <p>Created by Timmy Milligan</p>
   </div>
 </footer>
+{#  <div class="col-container col-max col-gutters flex-block-lg flex-item-center-lg">#}
+{#    <p>Created by Timmy Milligan</p>#}
+{#  </div>#}
+
+<!-- Placed at the end of the document so the pages load faster -->
+
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+{#<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>#}
+<!-- Bootstrap JavaScript CDN -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop() >= 20) {
+                $('.navbar').addClass('compressed');
+            } else {
+                $('.navbar').removeClass('compressed');
+            }
+        });
+    });
+</script>
+
 </body>
 </html>
