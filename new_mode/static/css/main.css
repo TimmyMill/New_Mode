@@ -1,102 +1,99 @@
 /* Navigation Bar
 ---------------------------------------------------------------------------------------*/
 .navbar-default {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    background: #110f2a;
-    color: #20c20e;
-    font-family: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
-    transition: all 0.3s;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-family: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+  color: #20c20e;
+  background: #110f2a;
+  transition: all 0.3s;
 }
 
 /*Active Page*/
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus{
-    color: #00ff00;
-    background-color: #121a44;
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #00ff00;
+  background-color: #121a44;
 }
 
 /*All Other Pages*/
-.navbar-default  .navbar-nav > li > a {
-    background-color: #110f2a;
-    color: #20c20e;
-    font-family: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+.navbar-default .navbar-nav > li > a {
+  font-family: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+  color: #20c20e;
+  background-color: #110f2a;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    background-color: #121a44;
-    /*background-color: #252d42;*/
-    color: #00ff00;
+  color: #00ff00;
+  background-color: #121a44;
+  /*background-color: #252d42;*/
 }
 
 /*Overrides the initial style when the page is scrolled*/
 .navbar.compressed {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background: #222147;
-    color: #20c20e;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #20c20e;
+  background: #222147;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 body {
-    background-color: #222147;
-    font-family: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
-    /* Padding for navigation bar */
-    padding-top: 60px;
-    /* Margin bottom = footer height */
-    margin-bottom: 60px;
-    /*background-color: #252d42;*/
+  /* Padding for navigation bar */
+  padding-top: 60px;
+  /* Margin bottom = footer height */
+  margin-bottom: 60px;
+  font-family: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+  background-color: #222147;
+  /*background-color: #252d42;*/
 }
 
 p {
-    color: #20c20e;
-    font-size: 1.2em;
-    line-height: 1.8em;
-    font-weight: 300;
-    margin: 30px 0;
+  margin: 30px 0;
+  line-height: 1.8em;
+  font-size: 1.2em;
+  font-weight: 300;
+  color: #20c20e;
 }
 
 .content {
-    padding: 50px 0;
+  padding: 50px 0;
 }
 
 .line {
-    width: 100%;
-    height: 1px;
-    margin: 30px 0;
-    border-bottom: 1px dashed #252d42;
+  width: 100%;
+  height: 1px;
+  margin: 30px 0;
+  border-bottom: 1px dashed #252d42;
 }
 
 /* Sticky footer
 ----------------------------------------------------------------------------*/
 html {
-    position: relative;
-    min-height: 100%;
+  position: relative;
+  min-height: 100%;
 }
 
 .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /* Fixed height of footer */
-    height: 60px;
-    background-color: #110f2a;
-    font-family: 'Consolas', 'Monaco', 'Bitstream Vera Sans Mono', monospace;
-    color: #00ff00;
-    /*right: 0;*/
-    /*left: 0;*/
-    /*padding: 1rem;*/
-    /*text-align: left;*/
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Fixed height of footer */
+  font-family: 'Consolas', 'Monaco', 'Bitstream Vera Sans Mono', monospace;
+  color: #00ff00;
+  background-color: #110f2a;
+  /*right: 0;*/
+  /*left: 0;*/
+  /*padding: 1rem;*/
+  /*text-align: left;*/
 }
 
 /* Overrides margin so footer sits at bottom */
-.footer .container > p {
-    margin: 0;
-}
+.footer .container > p { margin: 0; }
 
 .footer > .container {
-    padding-right: 15px;
-    padding-left: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
