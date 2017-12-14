@@ -91,6 +91,14 @@
         <li>Navigation</li>
         <li>Online Shopping</li>
       </ul>
+      <p class="intro-2">
+        More and more things are being connected online using sensors and other electronics, and we’re able to access
+        them with our smartphones and other devices – a phenomenon largely referred to as the
+        <span class="text-info"><abbr title="Internet of Things">IoT</abbr></span>. The IoT allows us to connect our
+        smartphones to other objects using a Cellular Signal, Bluetooth, Wi-Fi, <span class="text-info">
+        <abbr title="Near Field Communication">NFC</abbr></span>, etc. <u>Examples:</u> Fitbit, Smart watch, Smart home,
+        TVs, Automotive connectivity, Refrigerators
+      </p>
     </div>
   </div>
 </div>
@@ -128,7 +136,7 @@
   var sticky = navbar.offsetTop;
 
   function collapseNavbar() {
-      if (window.pageYOffset >= sticky) {
+      if (window.pageYOffset <= sticky) {
           navbar.classList.add("compressed");
       }
 
