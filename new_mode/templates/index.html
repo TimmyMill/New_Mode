@@ -14,10 +14,10 @@
   <link rel="stylesheet" href="/static/css/main.css">
 </head>
 
-<body>
+<body onscroll="collapseNavbar()">
 
 <!-- Navigation -->
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top" id="page-nav">
   <!-- Navbar Container -->
   <div class="container-fluid">
 
@@ -31,7 +31,7 @@
 
       <!-- Navbar Brand -->
       <a href="#" class="navbar-brand">
-        Bootstrap Navbar
+        Mobile Device Security
       </a>
     </div>
 
@@ -52,52 +52,61 @@
 </nav>
 <!-- End Navigation -->
 
-<div class="content">
+<!-- Wrapper for Main Page Content -->
+<div class="container-fluid text-center">
+  <div class="row content" id="top">
 
-  <div class="container">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit repudiandae sapiente explicabo aperiam veritatis
-      adipisci, omnis debitis sint quaerat soluta necessitatibus, dolore accusamus aut neque ab? Non praesentium maxime
-      perferendis!
-    </p>
-    <div class="line"></div>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique iusto aspernatur eius a blanditiis eveniet
-      ullam et itaque, esse rem fuga voluptate voluptatibus voluptatum, tempore obcaecati praesentium ad quo sunt.Velit
-      optio quidem qui nam quia eius obcaecati dolor eligendi facere tempore, ratione rem inventore nobis maxime sit
-      reiciendis placeat dolores ad recusandae porro. Omnis rerum similique quo voluptate incidunt!
-    </p>
-    <div class="line"></div>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita nam voluptate sed explicabo, ut adipisci dolore
-      omnis. Facilis veniam natus quae, alias sapiente. Explicabo maxime eligendi maiores quisquam ipsam, omnis!
-      Consequuntur odit, assumenda soluta voluptatibus earum quasi, ipsa est natus quae facilis aliquid sint. Fugiat
-      illum eum quis fuga id totam molestiae, itaque reprehenderit et iusto voluptatum similique facilis doloremque.
-      Pariatur quibusdam nesciunt explicabo ea saepe, at atque aut iste vel quis et, quos nam itaque magni assumenda
-      libero amet corrupti architecto doloremque voluptatem neque doloribus qui non unde. Doloribus. Architecto id,
-      error nobis. Vel quibusdam, eius aut deserunt sed omnis necessitatibus ab iusto eveniet, tenetur tempore a nobis
-      illum quia optio est excepturi adipisci doloribus quidem? Animi, officiis repellendus!
-    </p>
-    <div class="line"></div>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita nam voluptate sed explicabo, ut adipisci dolore
-      omnis. Facilis veniam natus quae, alias sapiente. Explicabo maxime eligendi maiores quisquam ipsam, omnis!
-      Consequuntur odit, assumenda soluta voluptatibus earum quasi, ipsa est natus quae facilis aliquid sint. Fugiat
-      illum eum quis fuga id totam molestiae, itaque reprehenderit et iusto voluptatum similique facilis doloremque.
-      Pariatur quibusdam nesciunt explicabo ea saepe, at atque aut iste vel quis et, quos nam itaque magni assumenda
-      libero amet corrupti architecto doloremque voluptatem neque doloribus qui non unde. Doloribus. Architecto id,
-      error nobis. Vel quibusdam, eius aut deserunt sed omnis necessitatibus ab iusto eveniet, tenetur tempore a nobis
-      illum quia optio est excepturi adipisci doloribus quidem? Animi, officiis repellendus!
-    </p>
+    <div class="col-sm-2 sidenav">
+      <p><a href="#">Link</a></p>
+    </div>
 
+    <div class="col-sm-9 text-left">
+{#      <h3>Your Private Data Might Not Be As Secure As You Think</h3>#}
+      <p class="intro-1">
+        Modern mobile devices have become so sophisticated that they're basically smaller versions of computers, making
+        them susceptible to the same security risks. The
+        <span class="text-info"><abbr title="Computing Technology Industry Association">CompTIA</abbr></span> conducted
+        a survey of more than 2,000 people and found that viruses and worms, which affected 54% of
+        users, and spyware, which affected 51%, continue to be the top two security threats. (Mobile Device Security Is
+        A Concern). Based on a 2015 survey by the Pew Research Center, 68% of adults in the US own smartphones. (Dai et
+        al.) With this number having likely risen, mobile device security impacts a large number of Americans.
+      </p>
+      <hr>
+      <p class="intro-2">
+        As we continue to make advancements in technology, the capabilities of mobile devices increase as well. Here are
+        just a few of the most common smart phone uses:
+      </p>
+      <ul class="intro-2 text-info">
+        <li>Texting</li>
+        <li>Social Media</li>
+        <li>Entertainment Streaming
+          <ul>
+            <li>Music</li>
+            <li>Movies</li>
+            <li>TV</li>
+          </ul>
+        </li>
+        <li>Camera</li>
+        <li>Weather</li>
+        <li>Navigation</li>
+        <li>Online Shopping</li>
+      </ul>
+    </div>
   </div>
-  <!-- End Container -->
 </div>
-<!-- End Content -->
+{#<div class="content" id="top">#}
+{##}
+{#  <div class="container">#}
+{##}
+{#  </div>#}
+{#  <!-- End Container -->#}
+{#</div>#}
+{#<!-- End Content -->#}
 
 <!-- Footer -->
-<footer class="footer">
-  <div class="container">
+<footer class="footer container-fluid">
+  <div class="container-fluid">
+    <p class="text-center"><a href="#top">Back to Top</a></p>
     <p>Created by Timmy Milligan</p>
     <p>Built with Bootstrap 3 & Python Flask</p>
   </div>
@@ -112,16 +121,32 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <script type="text/javascript">
-    $(document).ready(function () {
+  // Get the navbar element
+  var navbar = document.getElementById("page-nav");
 
-        $(window).on('scroll', function () {
-            if ($(window).scrollTop() >= 20) {
-                $('.navbar').addClass('compressed');
-            } else {
-                $('.navbar').removeClass('compressed');
-            }
-        });
-    });
+  // Get the offset position of the navbar
+  var sticky = navbar.offsetTop;
+
+  function collapseNavbar() {
+      if (window.pageYOffset >= sticky) {
+          navbar.classList.add("compressed");
+      }
+
+      else {
+          navbar.classList.remove("compressed")
+      }
+  }
+
+    {#$(document).ready(function () {#}
+    {##}
+    {#    $(window).on('scroll', function () {#}
+    {#        if ($(window).scrollTop() >= 20) {#}
+    {#            $('.navbar').addClass('compressed');#}
+    {#        } else {#}
+    {#            $('.navbar').removeClass('compressed');#}
+    {#        }#}
+    {#    });#}
+    {#{);#}
 </script>
 
 </body>
